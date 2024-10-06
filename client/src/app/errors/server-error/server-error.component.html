@@ -1,0 +1,7 @@
+<h4>Internal server error</h4>
+@if (error) {
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note: If you are seeing this error then angular is not to blame!</p>
+}
+<p>Following is the stak trace -check the first 2 lines this tells you exactly wich line of code caused the problem!</p>
+<code>{{error.details}}</code>
